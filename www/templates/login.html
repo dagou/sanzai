@@ -1,0 +1,30 @@
+<ion-modal-view>
+        <ion-header-bar class="bar-assertive">
+            <button class="button button-icon button-clear icon-left ion-ios-close-empty" ng-click="closeModal()">
+            </button>
+            <h1 class="title">Login</h1>
+            <button class="button button-icon button-clear" ng-click="closeModal()">
+                Register
+            </button>
+        </ion-header-bar>
+        <ion-content>
+            <div class="list list-inset">
+                <label class="item item-input icon-left">
+                    <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                    <input type="text" placeholder="Email" ng-model="username">
+                </label>
+                <label class="item item-input item-icon-left">
+                    <i class="ion ion-ios-locked-outline placeholder-icon"></i>
+                    <input type="password" placeholder="Password" ng-model="pass">
+                </label>
+
+                <label >
+                    <button class="button button-block button-assertive" ng-click="execLogin()">
+                        Login
+                    </button>
+                </label>
+            </div>
+
+        </ion-content>
+
+</ion-modal-view>

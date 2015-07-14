@@ -1,0 +1,15 @@
+<ion-view view-title="Chats" hide-nav-bar="true">
+    <ion-header-bar class="bar-assertive header-apa">
+        <h1 class="title">DotBuy</h1>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list list-inset list-cate">
+                <a class="item item-avatar item-half" ng-repeat="cate in cates">
+                    <img ng-src="{{cate.goods[0].img.small}}">
+                    <h2>{{cate.name}}</h2>
+                    <p>30%off</p>
+                </a>
+        </div>
+
+    </ion-content>
+</ion-view>
